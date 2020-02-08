@@ -31,7 +31,7 @@ print('T-статистика Cтьюдента: ' + str(calculateStudent(r_kof,
 print('Доверительная вероятность: ' + str(0.001))
 print('Число степеней свободы: ' + str(a.size))
 print('Табличное значение Т-Стьюдента: ' + str(3.291))
-print('Теснота связи: независимы.')
+print('Теснота связи: очень слабая обратная зависимость.')
 
 X_train, X_test, y_train, y_test = train_test_split(a, b, test_size=1/3, random_state=0)
 
