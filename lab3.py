@@ -57,8 +57,8 @@ def chech_hypothesis(value):
 def main():
     os.chdir('/home/kirill/PythonProjects/SA/')
 
-    image_1 = Image.open("planet.jpg")
-    image_2 = Image.open("landscape.jpg")
+    image_1 = Image.open("images/planet.jpg")
+    image_2 = Image.open("images/landscape.jpg")
 
     width_1, height_1 = image_1.size
     width_2, height_2 = image_2.size
@@ -66,8 +66,8 @@ def main():
     image_1_grayscale = image_1.convert('L')
     image_2_grayscale = image_2.convert('L')
 
-    image_1_grayscale.save("gray_scale_planet.jpg")
-    image_2_grayscale.save("gray_scale_landscape.jpg")
+    image_1_grayscale.save("images/gray_scale_planet.jpg")
+    image_2_grayscale.save("images/gray_scale_landscape.jpg")
 
     bins = list(range(0, 255, 10))
     bins.append(255)
